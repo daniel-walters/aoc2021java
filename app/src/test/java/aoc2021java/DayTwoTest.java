@@ -2,15 +2,15 @@ package aoc2021java;
 
 import static org.junit.Assert.*;
 
-import aoc2021java.days.DayOne;
+import aoc2021java.days.DayTwo;
 import org.junit.Test;
 
-public class DayOneTest {
-    DayOne sln = new DayOne("Day1.txt");
+public class DayTwoTest {
+    DayTwo sln = new DayTwo("Day2.txt");
 
     @Test
     public void partOne() {
-        int expected = 7;
+        int expected = 150;
         int actual = sln.partOne();
 
         assertEquals(expected, actual);
@@ -18,7 +18,7 @@ public class DayOneTest {
 
     @Test
     public void partTwo() {
-        int expected = 5;
+        int expected = 900;
         int actual = sln.partTwo();
 
         assertEquals(expected, actual);
