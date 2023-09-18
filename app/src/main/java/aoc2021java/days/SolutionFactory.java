@@ -10,6 +10,7 @@ public class SolutionFactory {
     static {
         classMap.put(1, "aoc2021java.days.DayOne");
         classMap.put(2, "aoc2021java.days.DayTwo");
+        classMap.put(3, "aoc2021java.days.DayThree");
     }
 
     public static Solution getDay(int day)
