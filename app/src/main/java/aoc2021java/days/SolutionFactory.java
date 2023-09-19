@@ -8,9 +8,10 @@ public class SolutionFactory {
     private static final Map<Integer, String> classMap = HashMap.newHashMap(25);
 
     static {
-        classMap.put(1, "aoc2021java.days.DayOne");
-        classMap.put(2, "aoc2021java.days.DayTwo");
-        classMap.put(3, "aoc2021java.days.DayThree");
+        classMap.put(1, "aoc2021java.days.DayOne.DayOne");
+        classMap.put(2, "aoc2021java.days.DayTwo.DayTwo");
+        classMap.put(3, "aoc2021java.days.DayThree.DayThree");
+        classMap.put(4, "aoc2021java.days.DayFour.DayFour");
     }
 
     public static Solution getDay(int day)

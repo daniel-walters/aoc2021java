@@ -1,5 +1,6 @@
-package aoc2021java.days;
+package aoc2021java.days.DayOne;
 
+import aoc2021java.days.Solution;
 import aoc2021java.utils.InputReader;
 import java.util.ArrayList;
 

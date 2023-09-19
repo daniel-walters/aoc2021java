@@ -2,7 +2,7 @@ package aoc2021java;
 
 import static org.junit.Assert.*;
 
-import aoc2021java.days.DayOne;
+import aoc2021java.days.DayOne.DayOne;
 import org.junit.Test;
 
 public class DayOneTest {
