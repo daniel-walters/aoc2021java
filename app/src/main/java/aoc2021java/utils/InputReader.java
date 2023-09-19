@@ -38,4 +38,15 @@ public class InputReader {
 
         return list;
     }
+
+    public static String asString(String fileName) {
+        String out = "";
+        Scanner s = new InputReader().readFile(fileName);
+
+        while (s.hasNextLine()) {
+            out += s.nextLine() + "\n";
+        }
+
+        return out;
+    }
 }
