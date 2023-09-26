@@ -13,6 +13,7 @@ public class SolutionFactory {
         classMap.put(3, "aoc2021java.days.DayThree.DayThree");
         classMap.put(4, "aoc2021java.days.DayFour.DayFour");
         classMap.put(5, "aoc2021java.days.DayFive.DayFive");
+        classMap.put(6, "aoc2021java.days.DaySix.DaySix");
     }
 
     public static Solution<?> getDay(int day)
@@ -29,6 +30,7 @@ public class SolutionFactory {
         Class<?> c = Class.forName(className);
         String inputFile = getFileName(day);
 
+        return (Solution<?>) c.getDeclaredConstructor(String.class)
             .newInstance(inputFile);
     }
 
