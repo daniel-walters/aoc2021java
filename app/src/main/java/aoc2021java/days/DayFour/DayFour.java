@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class DayFour extends Solution {
+public class DayFour extends Solution<Integer> {
     String input;
 
     public DayFour(String inputFile) {
@@ -25,7 +25,7 @@ public class DayFour extends Solution {
     }
 
     @Override
-    public int partOne() {
+    public Integer partOne() {
         LinkedList<String> parts =
             new LinkedList<>(Arrays.asList(this.input.split("\n\n")));
 
@@ -50,7 +50,7 @@ public class DayFour extends Solution {
     }
 
     @Override
-    public int partTwo() {
+    public Integer partTwo() {
         LinkedList<String> parts =
             new LinkedList<>(Arrays.asList(this.input.split("\n\n")));
 

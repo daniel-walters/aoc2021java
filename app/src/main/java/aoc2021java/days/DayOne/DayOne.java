@@ -4,7 +4,7 @@ import aoc2021java.days.Solution;
 import aoc2021java.utils.InputReader;
 import java.util.ArrayList;
 
-public class DayOne extends Solution {
+public class DayOne extends Solution<Integer> {
     ArrayList<Integer> input;
 
     public DayOne(String inputFile) {
@@ -13,7 +13,7 @@ public class DayOne extends Solution {
     }
 
     @Override
-    public int partOne() {
+    public Integer partOne() {
         int numIncreases = 0;
         int prev = input.get(0);
 
@@ -31,7 +31,7 @@ public class DayOne extends Solution {
     }
 
     @Override
-    public int partTwo() {
+    public Integer partTwo() {
         int numIncreases = 0;
         int prev = input.get(0) + input.get(1) + input.get(2);
 

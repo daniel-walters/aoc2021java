@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DayFive extends Solution {
+public class DayFive extends Solution<Integer> {
     ArrayList<String> input;
 
     public DayFive(String inputFile) {
@@ -45,7 +45,7 @@ public class DayFive extends Solution {
     }
 
     @Override
-    public int partOne() {
+    public Integer partOne() {
         Map<String, Integer> pointMap = new HashMap<>();
 
         for (String line : this.input) {
@@ -73,7 +73,7 @@ public class DayFive extends Solution {
     }
 
     @Override
-    public int partTwo() {
+    public Integer partTwo() {
         Map<String, Integer> pointMap = new HashMap<>();
 
         for (String line : this.input) {

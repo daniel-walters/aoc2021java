@@ -4,7 +4,7 @@ import aoc2021java.days.Solution;
 import aoc2021java.utils.InputReader;
 import java.util.ArrayList;
 
-public class DayThree extends Solution {
+public class DayThree extends Solution<Integer> {
     ArrayList<String> input;
 
     public DayThree(String inputFile) {
@@ -57,7 +57,7 @@ public class DayThree extends Solution {
     }
 
     @Override
-    public int partOne() {
+    public Integer partOne() {
         String gamma = "";
 
         for (int i = 0; i < this.input.get(0).length(); i++) {
@@ -76,7 +76,7 @@ public class DayThree extends Solution {
     }
 
     @Override
-    public int partTwo() {
+    public Integer partTwo() {
         ArrayList<String> o2 = new ArrayList<>(this.input);
         ArrayList<String> co2 = new ArrayList<>(this.input);
 

@@ -15,7 +15,7 @@ public class SolutionFactory {
         classMap.put(5, "aoc2021java.days.DayFive.DayFive");
     }
 
-    public static Solution getDay(int day)
+    public static Solution<?> getDay(int day)
         throws ClassNotFoundException, IllegalAccessException,
                NoSuchMethodException, InstantiationException,
                InvocationTargetException {
@@ -29,7 +29,6 @@ public class SolutionFactory {
         Class<?> c = Class.forName(className);
         String inputFile = getFileName(day);
 
-        return (Solution) c.getDeclaredConstructor(String.class)
             .newInstance(inputFile);
     }
 

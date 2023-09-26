@@ -36,7 +36,7 @@ public class App {
         }
 
         try {
-            Solution sln = SolutionFactory.getDay(day);
+            Solution<?> sln = SolutionFactory.getDay(day);
             System.out.println("Part One: " + sln.partOne());
             System.out.println("Part Two: " + sln.partTwo());
         } catch (Exception e) {
