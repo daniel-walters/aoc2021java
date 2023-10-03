@@ -14,6 +14,7 @@ public class SolutionFactory {
         classMap.put(4, "aoc2021java.days.DayFour.DayFour");
         classMap.put(5, "aoc2021java.days.DayFive.DayFive");
         classMap.put(6, "aoc2021java.days.DaySix.DaySix");
+        classMap.put(7, "aoc2021java.days.DaySeven.DaySeven");
     }
 
     public static Solution<?> getDay(int day)
